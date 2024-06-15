@@ -24,7 +24,12 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Template Main js File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TimelineMax.min.js"></script>
   <link href="assets/css/style.css" rel="stylesheet">
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -73,7 +78,7 @@
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
 
-          <a href="https://wa.me/+966556166111" class="get-started-btn scrollto" target="_blank"><i style="color: white;font-size:25px;" class="ri-whatsapp-line"></i></a>
+          <a href="https://wa.me/+966556166111" id="whats" class="get-started-btn scrollto" target="_blank"><i style="color: #009961;font-size:30px;" class="ri-whatsapp-line"></i></a>
 
 
           </a>
@@ -211,15 +216,15 @@
           <div class="slide">
             <img src="assets/img/logo/4.png" height="65%" width="80%" alt="" />
           </div>
+          <div class="slide" >
+            <img src="assets/img/logo/21.png" height="73%" width="80%"  alt="" />
+          </div>
           <div class="slide">
             <img src="assets/img/logo/5.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
             <img src="assets/img/logo/6.png" height="65%" width="80%" alt="" />
-            
-          </div>
-          <div class="slide" >
-            <img  src="assets/img/logo/1.png" height="65%" width="80%" alt="" />
+          
           </div>
           <div class="slide" >
             <img src="assets/img/logo/7.png" height="73%" width="80%"  alt="" />
@@ -228,13 +233,22 @@
             <img src="assets/img/logo/8.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
+            <img src="assets/img/logo/17.png" height="65%" width="80%" alt="" />
+          </div>
+          <div class="slide">
             <img src="assets/img/logo/9.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
             <img src="assets/img/logo/10.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
-            <img src="assets/img/logo/4.png" height="65%" width="80%" alt="" />
+            <img src="assets/img/logo/13.png" height="65%" width="80%" alt="" />
+          </div>
+          <div class="slide" >
+            <img  src="assets/img/logo/1.png" height="65%" width="80%" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/img/logo/18.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
             <img src="assets/img/logo/11.png" height="65%" width="80%" alt="" />
@@ -252,91 +266,19 @@
             <img src="assets/img/logo/15.png" height="65%" width="80%" alt="" />
           </div>
           <div class="slide">
-            <img src="assets/img/logo/4.png" height="65%" width="80%" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/logo/5.png" height="65%" width="80%" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/logo/6.png" height="65%" width="80%" alt="" />
+            <img src="assets/img/logo/19.png" height="65%" width="80%" alt="" />
             
           </div>
           <div class="slide" >
-            <img  src="assets/img/logo/1.png" height="65%" width="80%" alt="" />
+            <img  src="assets/img/logo/20.png" height="65%" width="80%" alt="" />
           </div>
-          <div class="slide" >
-            <img src="assets/img/logo/7.png" height="73%" width="80%"  alt="" />
-          </div>
+         
           <div class="slide">
-            <img src="assets/img/logo/8.png" height="65%" width="80%" alt="" />
+            <img src="assets/img/logo/22.png" height="65%" width="80%" alt="" />
           </div>
-          <div class="slide">
-            <img src="assets/img/logo/9.png" height="65%" width="80%" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/logo/10.png" height="65%" width="80%" alt="" />
-          </div>
-          
-          <div class="slide">
-            <img src="assets/img/logo/7.png" height="65%" width="80%" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/logo/8.png" height="65%" width="80%" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/logo/5.png" height="65%" width="80%" alt="" />
-          </div>
+        
         </div>
       </div>
-
-      <!-- <div class="row justify-content-center gy-5 gy-md-6">
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/1.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/2.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/3.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/4.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/15.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/6.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <h5></h5>
-          <img src="assets/img/logo/7.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/8.png" class="client-logo"  alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/9.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/10.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/11.png" class="client-logo" alt="Client Logo 1">
-        </div>
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/12.png" class="client-logo" alt="Client Logo 1">
-        </div> <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/13.png" class="client-logo" alt="Client Logo 1">
-        </div> 
-        <div class="col-6 col-md-3 text-center client-logo-container">
-          <img src="assets/img/logo/14.png" class="client-logo" alt="Client Logo 1">
-        </div>
-      </div> 
-      </div> -->
-     
-        <!-- Repeat the above block for each client logo -->
-      <!-- </div> -->
     </div>
   </section>
   
@@ -385,28 +327,7 @@
         </div>
       </div>
 
-      <div id="contact" class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="map-container">
-              <h2 class="text-center">Riyadh</h2>
-              <iframe class="w-100" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48445.249819970624!2d46.797749814273594!3d24.651995733749853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2fa815d5e226ed%3A0x167507b8f32add3c!2sAl-Zabin%20%26%20Al-Dakhil%20Allah%20Transports!5e1!3m2!1sen!2ssa!4v1718030145545!5m2!1sen!2ssa" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="map-container">
-              <h2 class="text-center">Jubail</h2>
-              <iframe class="w-100" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.74622503105!2d49.48040045365913!3d26.884401246715075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e35afbe2462ac69%3A0x889147950632b3ca!2zQWwtWmFiaW4gJiBBbC1EYWtoZWVsIEFsbGFoIFRyYW5zcG9ydHMgQ29tcGFueSAtINi02LHZg9ipINmG2YLZhNmK2KfYqiDYp9mE2LLYqNmGINmI2KfZhNiv2K7ZitmEINin2YTZhNmH!5e1!3m2!1sen!2ssa!4v1718112320616!5m2!1sen!2ssa" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="map-container">
-              <h2 class="text-center">Tabuk</h2>
-              <iframe class="w-100" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.7586890606751!2d36.42773579727509!3d28.406588326293203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a9a54f692aad69%3A0xf5949302ac49adbc!2sAl-Zabin%20%26%20Al-Dakhil%20Allah%20Transports!5e1!3m2!1sen!2ssa!4v1718112580236!5m2!1sen!2ssa" frameborder="0" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+
     
     
       
@@ -419,7 +340,12 @@
               <div class="address">
                 <i class="ri-map-pin-line"></i>
                 <h4 id="test" >Location:</h4>
-                <p>Nahawnd, As Sulay، P.O. Box 41444, Riyadh 11521</p>
+                <p>P.O. Box 41444, Dist. As Sulay
+                  Riyadh 14266, Saudi Arabia
+                  Contact Information:<br>
+                  Tel: +966 11 241 3050<br>
+                  Fax: +966 11 241 4116
+                  </p>
               </div>
 
               <div class="email">
@@ -452,15 +378,20 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                   </h4> -->
                 </div>
+              
                 <div  class="col-md-6 border-left  " >
-                  <h1 style="color:#009961; " >Contact Form</h1>
+                  <h3 style="color:#009961; " >Contact Form  </h3>
+                  <div id="errorMessage"  style="display: none; color: rgb(255, 0, 0); margin-top: 10px;">
+                    <u >Please fill out all required fields</u> 
+                   </div>
                   <div class="form-group">
                     <h5 for="name"></h5>
                     <input
                       type="text"
                       class="form-control"
                       id="name"
-                      placeholder="Enter name"
+                      placeholder="Enter name *"  
+                      required
                     />
                   </div>
                   <div class="form-group">
@@ -469,21 +400,25 @@
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Enter email"
+                      placeholder="Enter email * "
+                      required
                     />
                   </div>
                   <div class="form-group">
                     <h5 for="phone"></h5>
                     <input
-                      type="text"
+                      type="tel"
+                      oninput="validateNumber(this)"
                       class="form-control"
                       id="phone"
-                      placeholder="Enter Contact Number"
+                      maxlength="12"
+                      placeholder="Enter Contact Number *"
+                      required
                     />
                   </div>
                   <div class="form-group">
                     <h5 for="message"></h5>
-                    <textarea class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+                    <textarea class="form-control" id="message"   type="text" placeholder="Message *" required rows="3"></textarea>
                   </div>
                   <button style="margin: 20px; color:white; background: #009961;"  class="btn"  onclick="sendMail()">Submit</button>
                 </div>
@@ -496,43 +431,56 @@
         </div>
 
       </div>
+      <div class="success-message"  id="successMessage">
+        Your message sent successfully!!
+    </div>
     </section><!-- End Contact Section -->
-   
-  </main><!-- End #main -->
 
+  </main><!-- End #main -->
+  <button class="nav-button" onclick="toggleNavMenu()">
+    <div id="menuIcon" class="menu-icon">
+      <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+          <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+          <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+        </path>
+        <rect width="20" height="10" stroke="none">
+          <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+        </rect>
+        <rect width="20" height="10" stroke="none">
+          <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+          <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+        </rect>
+      </svg>
+    </div>
+</button>
+  <div class="nav-menu" id="navMenu">
+      <ul>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#cta">Vision</a></li>
+          <li><a class="nav-link scrollto" href="#pta">Our Partners</a></li>
+          <li><a class="nav-link scrollto" href="#test">Contact</a></li>
+      </ul>
+  </div>
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="bg-light text-dark py-3">
     <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="assets/img/logo.png" height="40px" width="120px" alt="ZDCO Logo">
-                <h3 style="padding-left: 25px; color:green; font-weight: bold;">ZDCO</h3>
-                <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#test">Contact</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                </ul>
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-2 mb-md-0 d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="ZDCO Logo" class="img-fluid" style="height: 30px; width: 60px;">
+                <h3 class="ml-2 mb-0" style="color:green; font-weight: bold;">ZDCO</h3>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="copyright">
-                &copy; Copyright <strong><span>ZDCO</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
-                <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <div class="row mt-2">
+            <div class="col-md-6 text-center text-md-left">
+                <p class="mb-0" style="font-size: 12px;">&copy; <strong>ZDCO</strong>. All Rights Reserved</p>
             </div>
         </div>
     </div>
-</footer>l
+</footer>
+
+
 
   <!-- End Footer -->
 
@@ -588,12 +536,30 @@ function animateCounters() {
 
 
 function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+  // Get form input values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var phone = document.getElementById("phone").value;
 
+  // Check if any of the required fields are empty
+  if (!name || !email || !message || !phone) {
+    var errorMessageDiv = document.getElementById("errorMessage");
+    errorMessageDiv.style.display = "block";
+    setTimeout(function() {
+      errorMessageDiv.style.display = "none";
+    }, 4000);
+    return; // Stop further execution
+  }
+
+  // Prepare email parameters
+  var params = {
+    name: name,
+    email: email,
+    message: message,
+    phone: phone,
+  };
+  
   const serviceID = "service_4cxi5nk";
   const templateID = "template_7r15zss";
 
@@ -602,14 +568,138 @@ function sendMail() {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
+        document.getElementById("phone").value = "";
         console.log(res);
-        alert("Your message sent successfully!!")
+        var successMessageDiv = document.getElementById("successMessage");
+        successMessageDiv.style.display = "block";
+        setTimeout(function() {
+            successMessageDiv.style.display = "none";
+        }, 4000);
 
     })
     .catch(err=>console.log(err));
 
 }
+function validateNumber(input) {
+    // Remove non-numeric characters from input value
+    input.value = input.value.replace(/\D/g, '');
+}
+// .......................................for slider..............................
 
+document.addEventListener('DOMContentLoaded', function () {
+        const slider = document.querySelector('.slider');
+        const slideTrack = document.querySelector('.slide-track');
+        let isDragging = false;
+        let autoSlideTimeline;
+        let dragStartPosition = 0;
+
+        // Initialize Draggable with GSAP
+        gsap.set(slideTrack, { x: -slideTrack.offsetWidth / 4 }); // Initial position
+
+        // Function to start dragging
+        function startDrag() {
+            isDragging = true;
+            slider.classList.add('active');
+            if (autoSlideTimeline) {
+                autoSlideTimeline.pause();
+            }
+        }
+
+        // Function to end dragging
+        function endDrag() {
+            isDragging = false;
+            slider.classList.remove('active');
+            dragStartPosition = Draggable.get(slideTrack).x; // Get the current position of slideTrack
+            if (!autoSlideTimeline.isActive()) {
+                startAutoSlide(dragStartPosition);
+            }
+        }
+
+        Draggable.create(slideTrack, {
+            type: "x",
+            bounds: slider,
+            throwProps: true,
+            inertia: true,
+            onDragStart: startDrag,
+            onDragEnd: endDrag
+        });
+
+        // Function to start auto sliding
+        function startAutoSlide(startPosition) {
+            if (autoSlideTimeline) {
+                autoSlideTimeline.kill(); // Kill the current timeline to restart it
+            }
+
+            // Create a timeline for automatic sliding
+            autoSlideTimeline = gsap.timeline({ repeat: -1 });
+            moveToNextSlide(startPosition); // Pass the start position to moveToNextSlide
+        }
+
+        // Function to move to next slide and reset position
+        function moveToNextSlide(startPosition) {
+            const slideWidth = slideTrack.querySelector('.slide').offsetWidth;
+            autoSlideTimeline.to(slideTrack, {
+                x: `-=${slideWidth}`, // Move left by one slide width
+                duration: 1, // Animation duration for sliding
+                ease: "none",
+                onComplete: function () {
+                    // Append the first slide to the end to create a rotating effect
+                    slideTrack.appendChild(slideTrack.firstElementChild.cloneNode(true));
+                    slideTrack.removeChild(slideTrack.firstElementChild);
+                    gsap.set(slideTrack, { x: startPosition }); // Reset position to start position
+                    autoSlideTimeline.play(); // Ensure the timeline continues after reset
+                }
+            });
+        }
+
+        // Initialize auto sliding
+        startAutoSlide(gsap.getProperty(slideTrack, 'x'));
+
+        // Event listeners for mouse interactions
+        slider.addEventListener('mouseleave', function () {
+            if (isDragging) {
+                endDrag();
+            }
+        });
+
+        slider.addEventListener('mouseup', function () {
+            if (isDragging) {
+                endDrag();
+            }
+        });
+    });
+    function toggleNavMenu() {
+      
+            var navMenu = document.getElementById("navMenu");
+            var menuIcon = document.getElementById("menuIcon");
+            if (navMenu.style.display === "none" || navMenu.style.display === "") {
+                navMenu.style.display = "block";
+                requestAnimationFrame(() => {
+                    navMenu.classList.add("show");
+                });
+                menuIcon.classList.add("open");
+            } else {
+                navMenu.classList.remove("show");
+                setTimeout(() => {
+                    navMenu.style.display = "none";
+                }, 300); // match the duration of the CSS transition
+                menuIcon.classList.remove("open");
+            }
+        }
+
+        document.addEventListener("click", function(event) {
+            var navMenu = document.getElementById("navMenu");
+            var menuIcon = document.getElementById("menuIcon");
+            // menuIcon.classList.toggle('open');
+            if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+                navMenu.classList.remove("show");
+                setTimeout(() => {
+                    navMenu.style.display = "none";
+                }, 300); // match the duration of the CSS transition
+                menuIcon.classList.remove("open");
+            }
+        });
+        
   </script> 
 </body>
 

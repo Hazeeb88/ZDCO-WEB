@@ -231,3 +231,11 @@
   new PureCounter();
 
 })()
+window.addEventListener('scroll', function() {
+  const button = document.querySelector('.get-started-btn');
+  if (window.scrollY > 0) {
+    button.classList.add('green');
+  } else {
+    button.classList.remove('green');
+  }
+});
