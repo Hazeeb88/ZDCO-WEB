@@ -1732,7 +1732,17 @@ width:  120px;
 }
 
 
+.nav-menu a {
+  color: initial; /* Initial color of menu items */
+  font-weight: initial; /* Initial font-weight of menu items */
+  transition: color 0.3s ease, font-color 0.3s ease; /* Add transition for color and font-weight */
+    font-size: 20px;
 
+}
+.nav-menu a.active {
+  color: #00b371; /* Color of the active menu item */
+  font-weight: 500; /* Font-weight of the active menu item */
+}
 
 .copyright,
 .credits {

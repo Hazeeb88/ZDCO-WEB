@@ -318,7 +318,7 @@
 
    
     <!-- ======= Contact Section ======= -->
-    <section  class="contact">
+    <section  id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
@@ -379,7 +379,7 @@
                   </h4> -->
                 </div>
               
-                <div  class="col-md-6 border-left  " >
+                <div  class="col-md-6 border-left  " id="ContactForm" >
                   <h3 style="color:#009961; " >Contact Form  </h3>
                   <div id="errorMessage"  style="display: none; color: rgb(255, 0, 0); margin-top: 10px;">
                     <u >Please fill out all required fields</u> 
@@ -454,15 +454,16 @@
       </svg>
     </div>
 </button>
-  <div class="nav-menu" id="navMenu">
-      <ul>
-          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#cta">Vision</a></li>
-          <li><a class="nav-link scrollto" href="#pta">Our Partners</a></li>
-          <li><a class="nav-link scrollto" href="#test">Contact</a></li>
-      </ul>
-  </div>
+<div class="nav-menu" id="navMenu">
+  <ul>
+      <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+      <li><a class="nav-link scrollto" href="#about">About</a></li>
+      <li><a class="nav-link scrollto" href="#cta">Vision</a></li>
+      <li><a class="nav-link scrollto" href="#pta">Our Partners</a></li>
+      <li><a class="nav-link scrollto" href="#ContactForm">Contact</a></li>
+  </ul>
+</div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="bg-light text-dark py-3">
     <div class="container">
@@ -699,7 +700,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 menuIcon.classList.remove("open");
             }
         });
-        
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Adjust threshold as needed
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href').substring(1) === entry.target.id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
   </script> 
 </body>
 
